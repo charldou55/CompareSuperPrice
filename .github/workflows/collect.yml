@@ -2,7 +2,7 @@ name: Collect official grocery prices
 on:
   workflow_dispatch:
   schedule:
-    - cron: "19 * * * *"
+    - cron: "19 */6 * * *"
   push:
     branches: [main]
     paths:
