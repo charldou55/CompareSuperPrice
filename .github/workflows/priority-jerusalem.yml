@@ -9,14 +9,14 @@ on:
       - .github/workflows/priority-jerusalem.yml
       - scripts/collect.py
 concurrency:
-  group: pricecompare-hourly
+  group: pricecompare-priority
   cancel-in-progress: false
 permissions:
   contents: write
 jobs:
   priority:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -31,7 +31,6 @@ jobs:
         continue-on-error: true
         run: |
           python scripts/collect.py --city "ירושלים" --limit-per-chain 4 \
-            --chain shufersal \
             --chain rami-levy \
             --chain osher-ad \
             --chain maayan-2000 \
