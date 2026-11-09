@@ -1,0 +1,67 @@
+name: Collect official grocery prices
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "19 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - scripts/collect.py
+      - requirements.txt
+      - tests/**
+      - .github/workflows/collect.yml
+permissions:
+  contents: write
+concurrency:
+  group: pricecompare-hourly
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+      - name: Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - name: Install official feed adapters
+        run: python -m pip install -r requirements.txt
+      - name: Validate collector
+        run: python -m unittest discover -s tests -v
+      - name: Read official Jerusalem prices from 31 adapters
+        id: harvest
+        continue-on-error: true
+        run: python scripts/collect.py --city "ירושלים" --limit-per-chain 2
+      - name: Commit only collected public data and status
+        if: always()
+        run: |
+          git config user.name "pricecompare-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -d data ]; then
+            git add data/
+            if ! git diff --cached --quiet; then
+              git commit -m "data: refresh official Jerusalem store prices"
+              git push origin HEAD:main
+            else
+              echo "No data changes to publish"
+            fi
+          else
+            echo "No data directory produced"
+          fi
+      - name: Upload diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: collector-report
+          path: data/status.json
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Fail when no live source was downloaded
+        if: steps.harvest.outcome != 'success'
+        run: |
+          echo "The collector could not download any store price file. Inspect data/status.json for the source errors."
+          exit 1
