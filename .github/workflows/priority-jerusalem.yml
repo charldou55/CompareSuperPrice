@@ -1,6 +1,8 @@
 name: Bootstrap Jerusalem priority chains
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "7 * * * *"
   push:
     branches: [main]
     paths:
@@ -14,7 +16,7 @@ permissions:
 jobs:
   priority:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -28,11 +30,12 @@ jobs:
         id: collect
         continue-on-error: true
         run: |
-          python scripts/collect.py --city "ירושלים" --limit-per-chain 2 \
+          python scripts/collect.py --city "ירושלים" --limit-per-chain 4 \
             --chain shufersal \
             --chain rami-levy \
             --chain osher-ad \
-            --chain maayan-2000
+            --chain maayan-2000 \
+            --chain yochananof
       - name: Commit public price snapshots and diagnostics
         if: always()
         run: |
