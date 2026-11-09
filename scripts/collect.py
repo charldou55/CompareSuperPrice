@@ -223,6 +223,42 @@ def write_barcode_shards(base, products):
             path.unlink()
     return len(buckets)
 
+def write_coverage_report(out, products):
+    """Publish cumulative *actual* store coverage, never inventory guesses."""
+    coverage = {}
+    for p in products.values():
+        for offer in p.get("offers", []):
+            key = str(offer.get("storeKey") or "")
+            if not key or offer.get("source") != "official-pricefull":
+                continue
+            row = coverage.setdefault(key, {
+                "storeKey": key, "chainId": offer.get("chainId") or "",
+                "chainName": offer.get("chainName") or "",
+                "storeId": offer.get("storeId") or "",
+                "storeName": offer.get("storeName") or "",
+                "city": offer.get("city") or "",
+                "sourcePublishedAt": offer.get("sourcePublishedAt"),
+                "sourceFetchedAt": offer.get("sourceFetchedAt"),
+                "productCount": 0,
+            })
+            row["productCount"] += 1
+            if str(offer.get("sourceFetchedAt") or "") > str(row.get("sourceFetchedAt") or ""):
+                row["sourceFetchedAt"] = offer.get("sourceFetchedAt")
+                row["sourcePublishedAt"] = offer.get("sourcePublishedAt")
+    rows = sorted(coverage.values(), key=lambda x: (x["chainId"], x["storeName"], x["storeKey"]))
+    summary = {
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "city": "ירושלים",
+        "scope": "official PriceFull prices actually fetched and still retained",
+        "uniqueStores": len(rows),
+        "uniqueChains": len({r["chainId"] for r in rows}),
+        "stores": rows,
+    }
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "coverage.json").write_text(
+        json.dumps(summary, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return summary
+
 def collect(city, out, limit=2, delay=0.25, restrict=None, batch_index=None, batch_count=None, exclude=None):
     now = datetime.now(timezone.utc)
     city_path = out / "cities" / "jerusalem"
@@ -290,11 +326,14 @@ def collect(city, out, limit=2, delay=0.25, restrict=None, batch_index=None, bat
     merged = merge_products(old, replacements, now)
     shards = write_shards(city_path, merged)
     barcode_shards = write_barcode_shards(city_path / 'barcodes', merged)
+    coverage = write_coverage_report(out, merged)
     status = {
         "schemaVersion": 2, "generatedAt": now.isoformat(), "city": city, "adapterCount": len(registry),
         "chainsWithSuccessfulDownloads": sum(1 for x in reports if x["status"] in ("success", "partial")),
         "storesDownloadedThisRun": len(replacements), "productsStored": len(merged),
-        "shards": shards, "barcodeShards": barcode_shards, "completeNationwide": False,
+        "shards": shards, "barcodeShards": barcode_shards,
+        "uniqueStoresCovered": coverage["uniqueStores"], "uniqueChainsCovered": coverage["uniqueChains"],
+        "completeNationwide": False,
         "reports": reports
     }
     out.mkdir(parents=True, exist_ok=True)
