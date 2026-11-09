@@ -9,7 +9,7 @@ on:
       - .github/workflows/priority-jerusalem.yml
       - scripts/collect.py
 concurrency:
-  group: pricecompare-priority
+  group: pricecompare-data-publisher
   cancel-in-progress: false
 permissions:
   contents: write
