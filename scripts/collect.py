@@ -32,12 +32,20 @@ def iso(value):
     return value.isoformat()
 
 def city_match(store, city):
-    fields = [getattr(store, "city", ""), getattr(store, "name", ""), getattr(store, "address", "")]
+    """Prefer the Israeli locality code. Never mistake a street named ירושלים for the city."""
     city = str(city or "").strip()
-    aliases = {city}
+    locality = str(getattr(store, "city", None) or "").strip()
+    branch = str(getattr(store, "name", None) or "").strip()
     if city == "ירושלים":
-        aliases.update(["Jerusalem", "ירושל"])
-    return any(alias.casefold() in str(x or "").casefold() for x in fields for alias in aliases if alias)
+        if locality == "3000" or locality in ("ירושלים", "Jerusalem"):
+            return True
+        # A known numeric code for another town takes priority over the street/address.
+        if locality.isdecimal() and locality != "0":
+            return False
+        # City code 0 means unknown; only trust the branch name, not its address.
+        other_places = ["ראשל", "ראשון לציון", "רמלה", "יפו", "תל אביב", "רעננה", "מודיעין", "פתח תקווה", "חולון", "חיפה", "נתניה", "אשדוד", "באר שבע"]
+        return ("ירושלים" in branch or "Jerusalem" in branch) and not any(place in branch for place in other_places)
+    return locality.casefold() == city.casefold()
 
 def select_city_stores(stores, chain_slug, city, limit):
     matches = [s for s in stores if city_match(s, city)]
@@ -194,7 +202,12 @@ def write_shards(base, products):
 def collect(city, out, limit=2, delay=0.25, restrict=None):
     now = datetime.now(timezone.utc)
     city_path = out / "cities" / "jerusalem"
-    old = load_previous(city_path)
+    try:
+        previous_status = json.loads((out / "status.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        previous_status = {}
+    # Invalidate the first flawed city-name-only selection, which included street names.
+    old = load_previous(city_path) if previous_status.get("schemaVersion") == 2 else {}
     replacements = {}
     reports = []
     registry = [chain for chain in ilp.list_chains() if chain.implemented]
@@ -226,7 +239,7 @@ def collect(city, out, limit=2, delay=0.25, restrict=None):
     merged = merge_products(old, replacements, now)
     shards = write_shards(city_path, merged)
     status = {
-        "generatedAt": now.isoformat(), "city": city, "adapterCount": len(registry),
+        "schemaVersion": 2, "generatedAt": now.isoformat(), "city": city, "adapterCount": len(registry),
         "chainsWithSuccessfulDownloads": sum(1 for x in reports if x["status"] in ("success", "partial")),
         "storesDownloadedThisRun": len(replacements), "productsStored": len(merged),
         "shards": shards, "completeNationwide": False,
