@@ -1,85 +1,49 @@
 {
-  "generatedAt": "2026-11-09T12:22:43.676716+00:00",
+  "generatedAt": "2026-11-09T12:32:49.982051+00:00",
   "city": "ירושלים",
-  "adapterCount": 31,
-  "chainsWithSuccessfulDownloads": 11,
-  "storesDownloadedThisRun": 15,
-  "productsStored": 27119,
-  "shards": 1011,
+  "adapterCount": 4,
+  "chainsWithSuccessfulDownloads": 2,
+  "storesDownloadedThisRun": 2,
+  "productsStored": 30694,
+  "shards": 1068,
   "completeNationwide": false,
   "reports": [
     {
       "chain": "shufersal",
       "name": "שופרסל",
-      "status": "failed",
-      "availableCityBranches": 0,
-      "stores": [],
-      "error": "GET https://prices.shufersal.co.il/FileObject/UpdateCategory failed after 3 attempts: The read operation timed out"
-    },
-    {
-      "chain": "super-pharm",
-      "name": "סופר פארם",
-      "status": "failed",
-      "availableCityBranches": 0,
-      "stores": [],
-      "error": "super-pharm: no Stores file"
-    },
-    {
-      "chain": "wolt",
-      "name": "וולט",
-      "status": "success",
-      "availableCityBranches": 2,
+      "status": "partial",
+      "availableCityBranches": 25,
       "stores": [
         {
-          "store": "014",
-          "subchain": "000",
-          "name": "וולט מרקט | סינמה סיטי ירושלים",
+          "store": "260",
+          "subchain": "8",
+          "name": "יוניברס ירושלים-קניון תלפיות",
           "city": "ירושלים",
-          "published": "2026-11-09T00:00:28+02:00",
-          "items": 4847,
+          "published": "2026-11-09T03:10:54+02:00",
+          "items": 8922,
           "status": "success"
         },
         {
-          "store": "024",
-          "subchain": "000",
-          "name": "וולט מרקט | ירושלים תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:00:24+02:00",
-          "items": 5689,
-          "status": "success"
+          "store": "664",
+          "status": "failed",
+          "error": "GET https://prices.shufersal.co.il/FileObject/UpdateCategory failed after 3 attempts: The read operation timed out"
         }
       ],
-      "inventoryCount": 37,
+      "inventoryCount": 417,
       "inventoryCitiesSample": [
-        "אור יהודה",
-        "אילון",
-        "אשדוד",
-        "באר שבע",
-        "הרצליה",
-        "חדרה",
-        "חיפה",
-        "ירושלים",
-        "כפר סבא",
-        "כפר קאסם",
-        "מודיעין-מכבים-רעות",
-        "נס ציונה"
+        "",
+        "10018",
+        "10044",
+        "10098",
+        "1015",
+        "1020",
+        "1031",
+        "1050",
+        "1061",
+        "1063",
+        "1139",
+        "1161"
       ]
-    },
-    {
-      "chain": "carrefour",
-      "name": "קרפור",
-      "status": "failed",
-      "availableCityBranches": 0,
-      "stores": [],
-      "error": "GET https://prices.carrefour.co.il/ failed after 3 attempts: timed out"
-    },
-    {
-      "chain": "hatzi-hinam",
-      "name": "חצי חינם",
-      "status": "failed",
-      "availableCityBranches": 0,
-      "stores": [],
-      "error": "GET https://shop.hazi-hinam.co.il/Prices -> HTTP 403"
     },
     {
       "chain": "rami-levy",
@@ -104,68 +68,6 @@
       ]
     },
     {
-      "chain": "tiv-taam",
-      "name": "טיב טעם",
-      "status": "success",
-      "availableCityBranches": 1,
-      "stores": [
-        {
-          "store": "070",
-          "subchain": "001",
-          "name": "יפו",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:40:04+02:00",
-          "items": 6706,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 54,
-      "inventoryCitiesSample": [
-        "104",
-        "1139",
-        "1167",
-        "1200",
-        "2620",
-        "386",
-        "4000",
-        "5000",
-        "587",
-        "6200",
-        "6300",
-        "6400"
-      ]
-    },
-    {
-      "chain": "yochananof",
-      "name": "יוחננוף",
-      "status": "success",
-      "availableCityBranches": 2,
-      "stores": [
-        {
-          "store": "012",
-          "subchain": "001",
-          "name": "רמלה",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:40:31+02:00",
-          "items": 11107,
-          "status": "success"
-        },
-        {
-          "store": "020",
-          "subchain": "001",
-          "name": "ירושלים תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:40:31+02:00",
-          "items": 11883,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 51,
-      "inventoryCitiesSample": [
-        "0"
-      ]
-    },
-    {
       "chain": "osher-ad",
       "name": "אושר עד",
       "status": "no_jerusalem_stores",
@@ -185,296 +87,6 @@
         "6500",
         "6900",
         "70"
-      ]
-    },
-    {
-      "chain": "dor-alon",
-      "name": "דור אלון",
-      "status": "success",
-      "availableCityBranches": 2,
-      "stores": [
-        {
-          "store": "597",
-          "subchain": "001",
-          "name": "AM-PM נרקיסים",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:20:14+02:00",
-          "items": 4770,
-          "status": "success"
-        },
-        {
-          "store": "801",
-          "subchain": "002",
-          "name": "הרכבים ירושלים",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:35:04+02:00",
-          "items": 1057,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 157,
-      "inventoryCitiesSample": [
-        "0",
-        "104",
-        "1247",
-        "1262",
-        "127",
-        "139",
-        "154",
-        "158",
-        "166",
-        "194",
-        "2015",
-        "2023"
-      ]
-    },
-    {
-      "chain": "keshet-teamim",
-      "name": "קשת טעמים",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 28,
-      "inventoryCitiesSample": [
-        "0",
-        "5000",
-        "7400"
-      ]
-    },
-    {
-      "chain": "super-cofix",
-      "name": "סופר קופיקס",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 34,
-      "inventoryCitiesSample": [
-        "unknown",
-        "אור יהודה",
-        "אשדוד",
-        "אשקלון",
-        "באר שבע",
-        "גבעת שמואל",
-        "גבעתיים",
-        "הוד השרון",
-        "הרצליה",
-        "חדרה",
-        "חולון",
-        "כפר סבא"
-      ]
-    },
-    {
-      "chain": "politzer",
-      "name": "פוליצר",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 8,
-      "inventoryCitiesSample": [
-        "0"
-      ]
-    },
-    {
-      "chain": "stop-market",
-      "name": "סטופ מרקט",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 11,
-      "inventoryCitiesSample": [
-        "240",
-        "250",
-        "4000",
-        "6400",
-        "7400",
-        "8300",
-        "96",
-        "9700"
-      ]
-    },
-    {
-      "chain": "fresh-market",
-      "name": "פרש מרקט",
-      "status": "success",
-      "availableCityBranches": 1,
-      "stores": [
-        {
-          "store": "055",
-          "subchain": "001",
-          "name": "לב הפארק רעננה",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:10:01+02:00",
-          "items": 4694,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 73,
-      "inventoryCitiesSample": [
-        "1061",
-        "1139",
-        "1345",
-        "182",
-        "2100",
-        "2530",
-        "2620",
-        "2640",
-        "2660",
-        "346",
-        "4000",
-        "5000"
-      ]
-    },
-    {
-      "chain": "salach-dabach",
-      "name": "סאלח דבאח",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 12,
-      "inventoryCitiesSample": [
-        "0"
-      ]
-    },
-    {
-      "chain": "super-yuda",
-      "name": "סופר יודה",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 26,
-      "inventoryCitiesSample": [
-        "1345",
-        "182",
-        "2650",
-        "5000",
-        "587",
-        "6400",
-        "6600",
-        "7900",
-        "8300"
-      ]
-    },
-    {
-      "chain": "yellow",
-      "name": "ילו",
-      "status": "success",
-      "availableCityBranches": 9,
-      "stores": [
-        {
-          "store": "121",
-          "subchain": "001",
-          "name": "מתחם צבר מקוה ישראל",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:10:01+02:00",
-          "items": 1686,
-          "status": "success"
-        },
-        {
-          "store": "178",
-          "subchain": "001",
-          "name": "מתחם עוקף רמלה -עמרו",
-          "city": "ירושלים",
-          "published": "2026-11-09T00:10:14+02:00",
-          "items": 1777,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 242,
-      "inventoryCitiesSample": [
-        "1020",
-        "1031",
-        "1034",
-        "1053",
-        "1054",
-        "1061",
-        "1063",
-        "1139",
-        "1167",
-        "1200",
-        "1219",
-        "1224"
-      ]
-    },
-    {
-      "chain": "good-pharm",
-      "name": "גוד פארם",
-      "status": "success",
-      "availableCityBranches": 1,
-      "stores": [
-        {
-          "store": "261",
-          "subchain": "000",
-          "name": "מוצקין - כורדני",
-          "city": "ירושלים",
-          "published": "2026-11-09T04:02:08+02:00",
-          "items": 2348,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 84,
-      "inventoryCitiesSample": [
-        "0",
-        "1020",
-        "1031",
-        "1049",
-        "1061",
-        "1139",
-        "246",
-        "2500",
-        "2530",
-        "2600",
-        "2610",
-        "2620"
-      ]
-    },
-    {
-      "chain": "super-bareket",
-      "name": "סופר ברקת",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 15,
-      "inventoryCitiesSample": [
-        "0",
-        "2650",
-        "6600",
-        "681",
-        "7200",
-        "8300",
-        "8400",
-        "9400"
-      ]
-    },
-    {
-      "chain": "king-store",
-      "name": "קינג סטור",
-      "status": "success",
-      "availableCityBranches": 1,
-      "stores": [
-        {
-          "store": "3386",
-          "subchain": "000",
-          "name": "וולט ירושלים",
-          "city": "ירושלים",
-          "published": "2026-11-09T03:08:16+02:00",
-          "items": 1848,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 48,
-      "inventoryCitiesSample": [
-        "0",
-        "1061",
-        "1139",
-        "1161",
-        "2710",
-        "2730",
-        "3000",
-        "4000",
-        "489",
-        "499",
-        "509",
-        "537"
       ]
     },
     {
@@ -505,173 +117,6 @@
         "9000",
         "922"
       ]
-    },
-    {
-      "chain": "meshnat-yosef",
-      "name": "משנת יוסף",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 4,
-      "inventoryCitiesSample": [
-        "0",
-        "2610"
-      ]
-    },
-    {
-      "chain": "shefa-birkat-hashem",
-      "name": "שפע ברכת השם",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 22,
-      "inventoryCitiesSample": [
-        "0",
-        "1309",
-        "2610",
-        "3000",
-        "31",
-        "3730",
-        "3780",
-        "3797",
-        "6100"
-      ]
-    },
-    {
-      "chain": "shuk-hayir",
-      "name": "שוק העיר",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 26,
-      "inventoryCitiesSample": [
-        "0",
-        "163",
-        "246",
-        "2630",
-        "3730",
-        "4702",
-        "6100",
-        "6500",
-        "6600",
-        "6900",
-        "70",
-        "7100"
-      ]
-    },
-    {
-      "chain": "super-sapir",
-      "name": "סופר ספיר",
-      "status": "success",
-      "availableCityBranches": 1,
-      "stores": [
-        {
-          "store": "026",
-          "subchain": "002",
-          "name": "בית הנציב ירושלים ת.",
-          "city": "ירושלים",
-          "published": "2026-11-09T03:50:28+02:00",
-          "items": 6425,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 130,
-      "inventoryCitiesSample": [
-        "0",
-        "1020",
-        "1031",
-        "1113",
-        "1200",
-        "1309",
-        "1401",
-        "1731",
-        "182",
-        "229",
-        "2400",
-        "2550"
-      ]
-    },
-    {
-      "chain": "zol-vebegadol",
-      "name": "זול ובגדול",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
-      "inventoryCount": 35,
-      "inventoryCitiesSample": [
-        "0",
-        "1015",
-        "2610",
-        "3000",
-        "3616",
-        "70",
-        "7100"
-      ]
-    },
-    {
-      "chain": "city-market",
-      "name": "סיטי מרקט",
-      "status": "success",
-      "availableCityBranches": 4,
-      "stores": [
-        {
-          "store": "011",
-          "subchain": "000",
-          "name": "ראשל\"צ ירושלים 120",
-          "city": "ירושלים",
-          "published": "2026-11-09T03:02:50+02:00",
-          "items": 4937,
-          "status": "success"
-        },
-        {
-          "store": "011",
-          "subchain": "000",
-          "name": "נרקיסים",
-          "city": "ירושלים",
-          "published": "2026-11-09T03:02:50+02:00",
-          "items": 4937,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 70,
-      "inventoryCitiesSample": [
-        "0",
-        "1200",
-        "2530",
-        "2550",
-        "2620",
-        "6300",
-        "6500",
-        "6600",
-        "6900",
-        "7900",
-        "8300",
-        "8400"
-      ]
-    },
-    {
-      "chain": "victory",
-      "name": "ויקטורי",
-      "status": "failed",
-      "availableCityBranches": 0,
-      "stores": [],
-      "error": "GET https://laibcatalog.co.il/webapi/api/getfiles failed after 3 attempts: timed out"
-    },
-    {
-      "chain": "mahsanei-hashuk",
-      "name": "מחסני השוק",
-      "status": "failed",
-      "availableCityBranches": 0,
-      "stores": [],
-      "error": "GET https://laibcatalog.co.il/webapi/api/getfiles failed after 3 attempts: timed out"
-    },
-    {
-      "chain": "het-cohen",
-      "name": "ח. כהן",
-      "status": "failed",
-      "availableCityBranches": 0,
-      "stores": [],
-      "error": "GET https://laibcatalog.co.il/webapi/api/getfiles failed after 3 attempts: timed out"
     }
   ]
 }
