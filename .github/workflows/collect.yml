@@ -45,6 +45,8 @@ jobs:
             git add data/
             if ! git diff --cached --quiet; then
               git commit -m "data: refresh official Jerusalem store prices"
+              git fetch origin main
+              git rebase origin/main
               git push origin HEAD:main
             else
               echo "No data changes to publish"
