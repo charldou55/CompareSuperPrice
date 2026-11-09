@@ -223,7 +223,7 @@ def write_barcode_shards(base, products):
             path.unlink()
     return len(buckets)
 
-def collect(city, out, limit=2, delay=0.25, restrict=None):
+def collect(city, out, limit=2, delay=0.25, restrict=None, batch_index=None, batch_count=None, exclude=None):
     now = datetime.now(timezone.utc)
     city_path = out / "cities" / "jerusalem"
     try:
@@ -246,6 +246,13 @@ def collect(city, out, limit=2, delay=0.25, restrict=None):
     registry = [chain for chain in ilp.list_chains() if chain.implemented]
     if restrict:
         registry = [chain for chain in registry if chain.slug in restrict]
+    if exclude:
+        registry = [chain for chain in registry if chain.slug not in exclude]
+    if batch_count is not None:
+        if batch_count < 1 or batch_index is None or not (0 <= batch_index < batch_count):
+            raise ValueError("batch-index must be within 0..batch-count-1")
+        registry = [chain for i, chain in enumerate(sorted(registry, key=lambda x: x.slug))
+                    if i % batch_count == batch_index]
     for chain in registry:
         report = {"chain": chain.slug, "name": chain.name_he or chain.name, "status": "failed", "availableCityBranches": 0, "stores": []}
         try:
@@ -302,8 +309,13 @@ if __name__ == "__main__":
     p.add_argument("--limit-per-chain", type=int, default=2)
     p.add_argument("--delay", type=float, default=0.25)
     p.add_argument("--chain", action="append", default=[])
+    p.add_argument("--exclude-chain", action="append", default=[])
+    p.add_argument("--batch-index", type=int)
+    p.add_argument("--batch-count", type=int)
     args = p.parse_args()
-    result = collect(args.city, Path(args.out), args.limit_per_chain, args.delay, set(args.chain) if args.chain else None)
+    result = collect(args.city, Path(args.out), args.limit_per_chain, args.delay,
+                     set(args.chain) if args.chain else None,
+                     args.batch_index, args.batch_count, set(args.exclude_chain))
     print(json.dumps({k: result[k] for k in ("adapterCount", "chainsWithSuccessfulDownloads", "storesDownloadedThisRun", "productsStored", "shards")}))
     if not result["storesDownloadedThisRun"]:
         sys.exit(2)
