@@ -1,86 +1,36 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-09T12:49:02.756253+00:00",
+  "generatedAt": "2026-11-09T14:48:39.657503+00:00",
   "city": "ירושלים",
   "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 3,
-  "storesDownloadedThisRun": 6,
-  "productsStored": 20090,
-  "shards": 773,
+  "chainsWithSuccessfulDownloads": 2,
+  "storesDownloadedThisRun": 3,
+  "productsStored": 24924,
+  "shards": 853,
+  "barcodeShards": 1484,
   "completeNationwide": false,
   "reports": [
     {
-      "chain": "shufersal",
-      "name": "שופרסל",
-      "status": "failed",
-      "availableCityBranches": 23,
-      "stores": [
-        {
-          "store": "260",
-          "status": "failed",
-          "error": "GET https://prices.shufersal.co.il/FileObject/UpdateCategory failed after 3 attempts: The read operation timed out"
-        },
-        {
-          "store": "664",
-          "status": "failed",
-          "error": "GET https://prices.shufersal.co.il/FileObject/UpdateCategory failed after 3 attempts: The read operation timed out"
-        }
-      ],
-      "inventoryCount": 417,
-      "inventoryCitiesSample": [
-        "",
-        "10018",
-        "10044",
-        "10098",
-        "1015",
-        "1020",
-        "1031",
-        "1050",
-        "1061",
-        "1063",
-        "1139",
-        "1161"
-      ]
-    },
-    {
-      "chain": "rami-levy",
-      "name": "רמי לוי",
-      "status": "success",
-      "availableCityBranches": 11,
-      "stores": [
-        {
-          "store": "001",
-          "subchain": "001",
-          "name": "תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-09T12:15:00+02:00",
-          "items": 12966,
-          "status": "success"
-        },
-        {
-          "store": "002",
-          "subchain": "001",
-          "name": "בזק מחסני מזון",
-          "city": "ירושלים",
-          "published": "2026-11-09T12:18:47+02:00",
-          "items": 11521,
-          "status": "success"
-        }
-      ],
-      "inventoryCount": 99,
+      "chain": "good-pharm",
+      "name": "גוד פארם",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 84,
       "inventoryCitiesSample": [
         "0",
-        "1015",
+        "1020",
         "1031",
-        "1034",
+        "1049",
+        "1061",
         "1139",
-        "1165",
-        "1200",
-        "171",
-        "195",
-        "2400",
         "246",
-        "2500"
+        "2500",
+        "2530",
+        "2600",
+        "2610",
+        "2620"
       ]
     },
     {
@@ -108,6 +58,7 @@
           "status": "success"
         }
       ],
+      "selectedBranches": 2,
       "inventoryCount": 24,
       "inventoryCitiesSample": [
         "155",
@@ -125,41 +76,48 @@
       ]
     },
     {
-      "chain": "maayan-2000",
-      "name": "מעיין 2000",
+      "chain": "super-cofix",
+      "name": "סופר קופיקס",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 34,
+      "inventoryCitiesSample": [
+        "unknown",
+        "אור יהודה",
+        "אשדוד",
+        "אשקלון",
+        "באר שבע",
+        "גבעת שמואל",
+        "גבעתיים",
+        "הוד השרון",
+        "הרצליה",
+        "חדרה",
+        "חולון",
+        "כפר סבא"
+      ]
+    },
+    {
+      "chain": "yochananof",
+      "name": "יוחננוף",
       "status": "success",
-      "availableCityBranches": 19,
+      "availableCityBranches": 1,
       "stores": [
         {
-          "store": "001",
-          "subchain": "000",
-          "name": "רכס",
+          "store": "020",
+          "subchain": "001",
+          "name": "ירושלים תלפיות",
           "city": "ירושלים",
-          "published": "2026-11-09T03:02:30+02:00",
-          "items": 1627,
-          "status": "success"
-        },
-        {
-          "store": "002",
-          "subchain": "000",
-          "name": "ים סוף מאה ואחד",
-          "city": "ירושלים",
-          "published": "2026-11-09T03:02:30+02:00",
-          "items": 3440,
+          "published": "2026-11-09T00:40:31+02:00",
+          "items": 11883,
           "status": "success"
         }
       ],
-      "inventoryCount": 38,
+      "selectedBranches": 1,
+      "inventoryCount": 51,
       "inventoryCitiesSample": [
-        "0",
-        "3000",
-        "3616",
-        "3797",
-        "6100",
-        "6700",
-        "874",
-        "9000",
-        "922"
+        "0"
       ]
     }
   ]
