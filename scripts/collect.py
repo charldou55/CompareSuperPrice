@@ -199,6 +199,30 @@ def write_shards(base, products):
             path.unlink()
     return len(shards)
 
+def write_barcode_shards(base, products):
+    """Index exact EAN/GTIN codes separately from text search shingles.
+
+    Each barcode prefix is its own small gzip shard; this allows exact barcode
+    lookup without searching a name or downloading the entire city catalogue.
+    Distinct internal product keys are not merged by barcode.
+    """
+    buckets = defaultdict(list)
+    for product in products.values():
+        code = str(product.get("barcode") or "").strip()
+        if code.isascii() and code.isdigit() and 8 <= len(code) <= 14:
+            buckets["b" + code[:7] + ".json.gz"].append(product)
+    base.mkdir(parents=True, exist_ok=True)
+    expected = set(buckets)
+    for filename, rows in buckets.items():
+        rows.sort(key=lambda p: str(p.get("key") or p.get("barcode")))
+        blob = json.dumps({"city": "ירושלים", "products": rows},
+                          ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+        (base / filename).write_bytes(gzip.compress(blob, compresslevel=6, mtime=0))
+    for path in base.glob("b*.json.gz"):
+        if path.name not in expected:
+            path.unlink()
+    return len(buckets)
+
 def collect(city, out, limit=2, delay=0.25, restrict=None):
     now = datetime.now(timezone.utc)
     city_path = out / "cities" / "jerusalem"
@@ -238,11 +262,12 @@ def collect(city, out, limit=2, delay=0.25, restrict=None):
         print(f'{chain.slug}: {report["status"]} (Jerusalem branches: {report["availableCityBranches"]}; fetched: {len(replacements)})', flush=True)
     merged = merge_products(old, replacements, now)
     shards = write_shards(city_path, merged)
+    barcode_shards = write_barcode_shards(city_path / 'barcodes', merged)
     status = {
         "schemaVersion": 2, "generatedAt": now.isoformat(), "city": city, "adapterCount": len(registry),
         "chainsWithSuccessfulDownloads": sum(1 for x in reports if x["status"] in ("success", "partial")),
         "storesDownloadedThisRun": len(replacements), "productsStored": len(merged),
-        "shards": shards, "completeNationwide": False,
+        "shards": shards, "barcodeShards": barcode_shards, "completeNationwide": False,
         "reports": reports
     }
     out.mkdir(parents=True, exist_ok=True)
