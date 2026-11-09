@@ -1,27 +1,24 @@
 {
-  "generatedAt": "2026-11-09T12:32:49.982051+00:00",
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T12:49:02.756253+00:00",
   "city": "ירושלים",
   "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 2,
-  "storesDownloadedThisRun": 2,
-  "productsStored": 30694,
-  "shards": 1068,
+  "chainsWithSuccessfulDownloads": 3,
+  "storesDownloadedThisRun": 6,
+  "productsStored": 20090,
+  "shards": 773,
   "completeNationwide": false,
   "reports": [
     {
       "chain": "shufersal",
       "name": "שופרסל",
-      "status": "partial",
-      "availableCityBranches": 25,
+      "status": "failed",
+      "availableCityBranches": 23,
       "stores": [
         {
           "store": "260",
-          "subchain": "8",
-          "name": "יוניברס ירושלים-קניון תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-09T03:10:54+02:00",
-          "items": 8922,
-          "status": "success"
+          "status": "failed",
+          "error": "GET https://prices.shufersal.co.il/FileObject/UpdateCategory failed after 3 attempts: The read operation timed out"
         },
         {
           "store": "664",
@@ -48,9 +45,28 @@
     {
       "chain": "rami-levy",
       "name": "רמי לוי",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
+      "status": "success",
+      "availableCityBranches": 11,
+      "stores": [
+        {
+          "store": "001",
+          "subchain": "001",
+          "name": "תלפיות",
+          "city": "ירושלים",
+          "published": "2026-11-09T12:15:00+02:00",
+          "items": 12966,
+          "status": "success"
+        },
+        {
+          "store": "002",
+          "subchain": "001",
+          "name": "בזק מחסני מזון",
+          "city": "ירושלים",
+          "published": "2026-11-09T12:18:47+02:00",
+          "items": 11521,
+          "status": "success"
+        }
+      ],
       "inventoryCount": 99,
       "inventoryCitiesSample": [
         "0",
@@ -70,9 +86,28 @@
     {
       "chain": "osher-ad",
       "name": "אושר עד",
-      "status": "no_jerusalem_stores",
-      "availableCityBranches": 0,
-      "stores": [],
+      "status": "success",
+      "availableCityBranches": 3,
+      "stores": [
+        {
+          "store": "003",
+          "subchain": "001",
+          "name": "גבעת שאול",
+          "city": "ירושלים",
+          "published": "2026-11-09T14:05:02+02:00",
+          "items": 6599,
+          "status": "success"
+        },
+        {
+          "store": "026",
+          "subchain": "001",
+          "name": "תלפיות",
+          "city": "ירושלים",
+          "published": "2026-11-09T14:05:01+02:00",
+          "items": 6718,
+          "status": "success"
+        }
+      ],
       "inventoryCount": 24,
       "inventoryCitiesSample": [
         "155",
@@ -93,15 +128,24 @@
       "chain": "maayan-2000",
       "name": "מעיין 2000",
       "status": "success",
-      "availableCityBranches": 1,
+      "availableCityBranches": 19,
       "stores": [
         {
-          "store": "063",
+          "store": "001",
           "subchain": "000",
-          "name": "מורדות גילה",
+          "name": "רכס",
           "city": "ירושלים",
           "published": "2026-11-09T03:02:30+02:00",
-          "items": 1316,
+          "items": 1627,
+          "status": "success"
+        },
+        {
+          "store": "002",
+          "subchain": "000",
+          "name": "ים סוף מאה ואחד",
+          "city": "ירושלים",
+          "published": "2026-11-09T03:02:30+02:00",
+          "items": 3440,
           "status": "success"
         }
       ],
