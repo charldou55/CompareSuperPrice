@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - .github/workflows/priority-jerusalem.yml
+      - scripts/collect.py
+concurrency:
+  group: bootstrap-jerusalem
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
