@@ -234,6 +234,15 @@ def collect(city, out, limit=2, delay=0.25, restrict=None):
     old = load_previous(city_path) if previous_status.get("schemaVersion") == 2 else {}
     replacements = {}
     reports = []
+    # Attempt timestamps rotate branch selection: unvisited stores first, then oldest.
+    # This also rotates failed endpoints rather than repeatedly retrying the same two.
+    attempts_file = out / "store-attempts.json"
+    try:
+        attempts = json.loads(attempts_file.read_text(encoding="utf-8"))
+        if not isinstance(attempts, dict):
+            attempts = {}
+    except (OSError, ValueError):
+        attempts = {}
     registry = [chain for chain in ilp.list_chains() if chain.implemented]
     if restrict:
         registry = [chain for chain in registry if chain.slug in restrict]
@@ -241,11 +250,22 @@ def collect(city, out, limit=2, delay=0.25, restrict=None):
         report = {"chain": chain.slug, "name": chain.name_he or chain.name, "status": "failed", "availableCityBranches": 0, "stores": []}
         try:
             inventory = ilp.get_stores(chain.slug)
-            selected, found = select_city_stores(inventory.stores, chain.slug, city, limit)
+            # The original fixed "first N" selection kept re-downloading the
+            # same stores and left dozens of Jerusalem branches permanently absent.
+            candidates, found = select_city_stores(
+                inventory.stores, chain.slug, city, len(inventory.stores))
+            def attempt_key(st):
+                sub = str(getattr(st, "sub_chain_id", None) or "0")
+                return f"{chain.slug}|{sub}|{st.store_id}"
+            # Python's stable sort keeps Universe's initial priority when ages tie.
+            selected = sorted(candidates, key=lambda st: attempts.get(attempt_key(st), ""))[:limit]
             report["availableCityBranches"] = found
+            report["selectedBranches"] = len(selected)
             report["inventoryCount"] = len(inventory.stores)
             report["inventoryCitiesSample"] = sorted({str(getattr(s, "city", None) or "") for s in inventory.stores})[:12]
             for store in selected:
+                # Record attempts even when a portal times out.
+                attempts[attempt_key(store)] = now.isoformat()
                 try:
                     key, rows, store_report = fetch_store(chain, store)
                     replacements[key] = rows
@@ -271,6 +291,7 @@ def collect(city, out, limit=2, delay=0.25, restrict=None):
         "reports": reports
     }
     out.mkdir(parents=True, exist_ok=True)
+    attempts_file.write_text(json.dumps(attempts, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (out / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding="utf-8")
     return status
 
