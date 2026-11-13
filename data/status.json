@@ -1,17 +1,25 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-13T15:17:51.022151+00:00",
+  "generatedAt": "2026-11-13T19:50:09.698215+00:00",
   "city": "ירושלים",
-  "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 4,
-  "storesDownloadedThisRun": 12,
-  "productsStored": 38233,
-  "shards": 1025,
-  "barcodeShards": 2603,
-  "uniqueStoresCovered": 52,
+  "adapterCount": 3,
+  "chainsWithSuccessfulDownloads": 2,
+  "storesDownloadedThisRun": 3,
+  "productsStored": 38555,
+  "shards": 1029,
+  "barcodeShards": 2612,
+  "uniqueStoresCovered": 53,
   "uniqueChainsCovered": 11,
   "completeNationwide": false,
   "reports": [
+    {
+      "chain": "het-cohen",
+      "name": "ח. כהן",
+      "status": "failed",
+      "availableCityBranches": 0,
+      "stores": [],
+      "error": "GET https://laibcatalog.co.il/webapi/api/getfiles failed after 3 attempts: timed out"
+    },
     {
       "chain": "rami-levy",
       "name": "רמי לוי",
@@ -19,43 +27,25 @@
       "availableCityBranches": 11,
       "stores": [
         {
-          "store": "700",
+          "store": "003",
           "subchain": "001",
-          "name": "בית הפירות פסגת זאב",
+          "name": "רמות",
           "city": "ירושלים",
-          "published": "2026-11-13T12:00:06+02:00",
-          "items": 4399,
+          "published": "2026-11-13T18:00:06+02:00",
+          "items": 7598,
           "status": "success"
         },
         {
-          "store": "703",
+          "store": "005",
           "subchain": "001",
-          "name": "בית הפירות פת",
+          "name": "רב מכר",
           "city": "ירושלים",
-          "published": "2026-11-13T12:00:06+02:00",
-          "items": 5107,
-          "status": "success"
-        },
-        {
-          "store": "705",
-          "subchain": "001",
-          "name": "בית הפירות קריית יוב",
-          "city": "ירושלים",
-          "published": "2026-11-13T12:00:19+02:00",
-          "items": 5144,
-          "status": "success"
-        },
-        {
-          "store": "002",
-          "subchain": "001",
-          "name": "בזק מחסני מזון",
-          "city": "ירושלים",
-          "published": "2026-11-13T12:15:00+02:00",
-          "items": 11553,
+          "published": "2026-11-13T18:00:13+02:00",
+          "items": 14808,
           "status": "success"
         }
       ],
-      "selectedBranches": 4,
+      "selectedBranches": 2,
       "inventoryCount": 99,
       "inventoryCitiesSample": [
         "0",
@@ -73,133 +63,41 @@
       ]
     },
     {
-      "chain": "yochananof",
-      "name": "יוחננוף",
-      "status": "success",
-      "availableCityBranches": 1,
+      "chain": "super-sapir",
+      "name": "סופר ספיר",
+      "status": "partial",
+      "availableCityBranches": 11,
       "stores": [
         {
-          "store": "020",
-          "subchain": "001",
-          "name": "ירושלים תלפיות",
+          "store": "111",
+          "subchain": "012",
+          "name": "וולט בית הנציב",
           "city": "ירושלים",
-          "published": "2026-11-13T00:40:31+02:00",
-          "items": 11907,
+          "published": "2026-11-13T05:00:16+02:00",
+          "items": 3473,
           "status": "success"
+        },
+        {
+          "store": "121",
+          "status": "failed",
+          "error": "No PriceFull for super-sapir/121"
         }
       ],
-      "selectedBranches": 1,
-      "inventoryCount": 51,
-      "inventoryCitiesSample": [
-        "0"
-      ]
-    },
-    {
-      "chain": "osher-ad",
-      "name": "אושר עד",
-      "status": "success",
-      "availableCityBranches": 3,
-      "stores": [
-        {
-          "store": "003",
-          "subchain": "001",
-          "name": "גבעת שאול",
-          "city": "ירושלים",
-          "published": "2026-11-13T14:05:02+02:00",
-          "items": 6579,
-          "status": "success"
-        },
-        {
-          "store": "026",
-          "subchain": "001",
-          "name": "תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-13T14:05:01+02:00",
-          "items": 6641,
-          "status": "success"
-        },
-        {
-          "store": "028",
-          "subchain": "001",
-          "name": "שמגר",
-          "city": "ירושלים",
-          "published": "2026-11-13T14:05:01+02:00",
-          "items": 6093,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 3,
-      "inventoryCount": 24,
-      "inventoryCitiesSample": [
-        "155",
-        "2006",
-        "2610",
-        "2620",
-        "3000",
-        "3780",
-        "4000",
-        "5000",
-        "6100",
-        "6500",
-        "6900",
-        "70"
-      ]
-    },
-    {
-      "chain": "maayan-2000",
-      "name": "מעיין 2000",
-      "status": "success",
-      "availableCityBranches": 19,
-      "stores": [
-        {
-          "store": "022",
-          "subchain": "000",
-          "name": "בית ישראל",
-          "city": "ירושלים",
-          "published": "2026-11-13T03:02:35+02:00",
-          "items": 2582,
-          "status": "success"
-        },
-        {
-          "store": "023",
-          "subchain": "000",
-          "name": "קק\"ל",
-          "city": "ירושלים",
-          "published": "2026-11-13T03:02:35+02:00",
-          "items": 2108,
-          "status": "success"
-        },
-        {
-          "store": "043",
-          "subchain": "000",
-          "name": "השישה עשר",
-          "city": "ירושלים",
-          "published": "2026-11-13T03:02:35+02:00",
-          "items": 1821,
-          "status": "success"
-        },
-        {
-          "store": "002",
-          "subchain": "000",
-          "name": "ים סוף מאה ואחד",
-          "city": "ירושלים",
-          "published": "2026-11-13T03:02:35+02:00",
-          "items": 3444,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 4,
-      "inventoryCount": 38,
+      "selectedBranches": 2,
+      "inventoryCount": 130,
       "inventoryCitiesSample": [
         "0",
-        "3000",
-        "3616",
-        "3797",
-        "6100",
-        "6700",
-        "874",
-        "9000",
-        "922"
+        "1020",
+        "1031",
+        "1113",
+        "1200",
+        "1309",
+        "1401",
+        "1731",
+        "182",
+        "229",
+        "2400",
+        "2550"
       ]
     }
   ]
