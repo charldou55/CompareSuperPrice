@@ -1,205 +1,80 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-15T09:10:06.250096+00:00",
+  "generatedAt": "2026-11-15T16:25:54.248935+00:00",
   "city": "ירושלים",
   "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 4,
-  "storesDownloadedThisRun": 12,
-  "productsStored": 38906,
-  "shards": 1031,
-  "barcodeShards": 2633,
-  "uniqueStoresCovered": 56,
+  "chainsWithSuccessfulDownloads": 1,
+  "storesDownloadedThisRun": 2,
+  "productsStored": 39743,
+  "shards": 1046,
+  "barcodeShards": 2666,
+  "uniqueStoresCovered": 58,
   "uniqueChainsCovered": 11,
   "completeNationwide": false,
   "reports": [
     {
-      "chain": "rami-levy",
-      "name": "רמי לוי",
-      "status": "success",
-      "availableCityBranches": 11,
-      "stores": [
-        {
-          "store": "706",
-          "subchain": "001",
-          "name": "ב.הפירות ארמון הנציב",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:10:11+02:00",
-          "items": 5349,
-          "status": "success"
-        },
-        {
-          "store": "048",
-          "subchain": "001",
-          "name": "עטרות",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:10:17+02:00",
-          "items": 14428,
-          "status": "success"
-        },
-        {
-          "store": "700",
-          "subchain": "001",
-          "name": "בית הפירות פסגת זאב",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:10:17+02:00",
-          "items": 4394,
-          "status": "success"
-        },
-        {
-          "store": "001",
-          "subchain": "001",
-          "name": "תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:10:18+02:00",
-          "items": 12960,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 4,
-      "inventoryCount": 99,
-      "inventoryCitiesSample": [
-        "0",
-        "1015",
-        "1031",
-        "1034",
-        "1139",
-        "1165",
-        "1200",
-        "171",
-        "195",
-        "2400",
-        "246",
-        "2500"
-      ]
+      "chain": "hatzi-hinam",
+      "name": "חצי חינם",
+      "status": "failed",
+      "availableCityBranches": 0,
+      "stores": [],
+      "error": "GET https://shop.hazi-hinam.co.il/Prices -> HTTP 403"
     },
     {
-      "chain": "yochananof",
-      "name": "יוחננוף",
-      "status": "success",
-      "availableCityBranches": 1,
-      "stores": [
-        {
-          "store": "020",
-          "subchain": "001",
-          "name": "ירושלים תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:40:31+02:00",
-          "items": 11871,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 1,
-      "inventoryCount": 51,
+      "chain": "politzer",
+      "name": "פוליצר",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 8,
       "inventoryCitiesSample": [
         "0"
       ]
     },
     {
-      "chain": "osher-ad",
-      "name": "אושר עד",
-      "status": "success",
-      "availableCityBranches": 3,
-      "stores": [
-        {
-          "store": "003",
-          "subchain": "001",
-          "name": "גבעת שאול",
-          "city": "ירושלים",
-          "published": "2026-11-15T11:05:01+02:00",
-          "items": 6565,
-          "status": "success"
-        },
-        {
-          "store": "026",
-          "subchain": "001",
-          "name": "תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-15T11:05:01+02:00",
-          "items": 6628,
-          "status": "success"
-        },
-        {
-          "store": "028",
-          "subchain": "001",
-          "name": "שמגר",
-          "city": "ירושלים",
-          "published": "2026-11-15T11:05:01+02:00",
-          "items": 6086,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 3,
-      "inventoryCount": 24,
-      "inventoryCitiesSample": [
-        "155",
-        "2006",
-        "2610",
-        "2620",
-        "3000",
-        "3780",
-        "4000",
-        "5000",
-        "6100",
-        "6500",
-        "6900",
-        "70"
-      ]
+      "chain": "super-pharm",
+      "name": "סופר פארם",
+      "status": "failed",
+      "availableCityBranches": 0,
+      "stores": [],
+      "error": "super-pharm: no Stores file"
     },
     {
-      "chain": "maayan-2000",
-      "name": "מעיין 2000",
+      "chain": "zol-vebegadol",
+      "name": "זול ובגדול",
       "status": "success",
-      "availableCityBranches": 19,
+      "availableCityBranches": 24,
       "stores": [
         {
-          "store": "006",
+          "store": "008",
           "subchain": "000",
-          "name": "ירמיהו אחד",
+          "name": "בית וגן חכמי",
           "city": "ירושלים",
-          "published": "2026-11-15T03:02:28+02:00",
-          "items": 2940,
+          "published": "2026-11-15T04:04:13+02:00",
+          "items": 5401,
           "status": "success"
         },
         {
-          "store": "007",
+          "store": "011",
           "subchain": "000",
-          "name": "משה דיין",
+          "name": "פסגת זאב הגדול",
           "city": "ירושלים",
-          "published": "2026-11-15T03:02:28+02:00",
-          "items": 2451,
-          "status": "success"
-        },
-        {
-          "store": "009",
-          "subchain": "000",
-          "name": "גבעת מרדכי",
-          "city": "ירושלים",
-          "published": "2026-11-15T03:02:28+02:00",
-          "items": 3005,
-          "status": "success"
-        },
-        {
-          "store": "001",
-          "subchain": "000",
-          "name": "רכס",
-          "city": "ירושלים",
-          "published": "2026-11-15T03:02:28+02:00",
-          "items": 1622,
+          "published": "2026-11-15T04:04:13+02:00",
+          "items": 7335,
           "status": "success"
         }
       ],
-      "selectedBranches": 4,
-      "inventoryCount": 38,
+      "selectedBranches": 2,
+      "inventoryCount": 35,
       "inventoryCitiesSample": [
         "0",
+        "1015",
+        "2610",
         "3000",
         "3616",
-        "3797",
-        "6100",
-        "6700",
-        "874",
-        "9000",
-        "922"
+        "70",
+        "7100"
       ]
     }
   ]
