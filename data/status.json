@@ -1,193 +1,117 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-15T01:44:11.641400+00:00",
+  "generatedAt": "2026-11-15T06:45:03.422610+00:00",
   "city": "ירושלים",
   "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 3,
-  "storesDownloadedThisRun": 9,
-  "productsStored": 38904,
+  "chainsWithSuccessfulDownloads": 2,
+  "storesDownloadedThisRun": 3,
+  "productsStored": 38940,
   "shards": 1031,
-  "barcodeShards": 2635,
+  "barcodeShards": 2636,
   "uniqueStoresCovered": 56,
   "uniqueChainsCovered": 11,
   "completeNationwide": false,
   "reports": [
     {
-      "chain": "rami-levy",
-      "name": "רמי לוי",
-      "status": "success",
-      "availableCityBranches": 11,
-      "stores": [
-        {
-          "store": "705",
-          "subchain": "001",
-          "name": "בית הפירות קריית יוב",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:10:02+02:00",
-          "items": 5141,
-          "status": "success"
-        },
-        {
-          "store": "002",
-          "subchain": "001",
-          "name": "בזק מחסני מזון",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:10:12+02:00",
-          "items": 11538,
-          "status": "success"
-        },
-        {
-          "store": "013",
-          "subchain": "001",
-          "name": "גבעת שאול",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:10:08+02:00",
-          "items": 12189,
-          "status": "success"
-        },
-        {
-          "store": "022",
-          "subchain": "001",
-          "name": "כנפי נשרים",
-          "city": "ירושלים",
-          "published": "2026-11-15T00:10:14+02:00",
-          "items": 13259,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 4,
-      "inventoryCount": 99,
-      "inventoryCitiesSample": [
-        "0",
-        "1015",
-        "1031",
-        "1034",
-        "1139",
-        "1165",
-        "1200",
-        "171",
-        "195",
-        "2400",
-        "246",
-        "2500"
-      ]
-    },
-    {
-      "chain": "yochananof",
-      "name": "יוחננוף",
+      "chain": "dor-alon",
+      "name": "דור אלון",
       "status": "success",
       "availableCityBranches": 1,
       "stores": [
         {
-          "store": "020",
-          "subchain": "001",
-          "name": "ירושלים תלפיות",
+          "store": "801",
+          "subchain": "002",
+          "name": "הרכבים ירושלים",
           "city": "ירושלים",
-          "published": "2026-11-15T00:40:31+02:00",
-          "items": 11871,
+          "published": "2026-11-15T00:35:01+02:00",
+          "items": 1046,
           "status": "success"
         }
       ],
       "selectedBranches": 1,
-      "inventoryCount": 51,
-      "inventoryCitiesSample": [
-        "0"
-      ]
-    },
-    {
-      "chain": "osher-ad",
-      "name": "אושר עד",
-      "status": "failed",
-      "availableCityBranches": 3,
-      "stores": [
-        {
-          "store": "003",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/003"
-        },
-        {
-          "store": "026",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/026"
-        },
-        {
-          "store": "028",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/028"
-        }
-      ],
-      "selectedBranches": 3,
-      "inventoryCount": 24,
-      "inventoryCitiesSample": [
-        "155",
-        "2006",
-        "2610",
-        "2620",
-        "3000",
-        "3780",
-        "4000",
-        "5000",
-        "6100",
-        "6500",
-        "6900",
-        "70"
-      ]
-    },
-    {
-      "chain": "maayan-2000",
-      "name": "מעיין 2000",
-      "status": "success",
-      "availableCityBranches": 19,
-      "stores": [
-        {
-          "store": "044",
-          "subchain": "000",
-          "name": "שמעון חכם",
-          "city": "ירושלים",
-          "published": "2026-11-15T03:02:28+02:00",
-          "items": 1924,
-          "status": "success"
-        },
-        {
-          "store": "062",
-          "subchain": "000",
-          "name": "נווה יעקב (אביר יעקב)",
-          "city": "ירושלים",
-          "published": "2026-11-15T03:02:28+02:00",
-          "items": 2199,
-          "status": "success"
-        },
-        {
-          "store": "063",
-          "subchain": "000",
-          "name": "מורדות גילה",
-          "city": "ירושלים",
-          "published": "2026-11-15T03:02:28+02:00",
-          "items": 1332,
-          "status": "success"
-        },
-        {
-          "store": "004",
-          "subchain": "000",
-          "name": "פסגת זאב",
-          "city": "ירושלים",
-          "published": "2026-11-15T03:02:28+02:00",
-          "items": 1463,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 4,
-      "inventoryCount": 38,
+      "inventoryCount": 157,
       "inventoryCitiesSample": [
         "0",
-        "3000",
-        "3616",
-        "3797",
-        "6100",
-        "6700",
-        "874",
-        "9000",
-        "922"
+        "104",
+        "1247",
+        "1262",
+        "127",
+        "139",
+        "154",
+        "158",
+        "166",
+        "194",
+        "2015",
+        "2023"
+      ]
+    },
+    {
+      "chain": "mahsanei-hashuk",
+      "name": "מחסני השוק",
+      "status": "failed",
+      "availableCityBranches": 0,
+      "stores": [],
+      "error": "GET https://laibcatalog.co.il/webapi/api/getfiles failed after 3 attempts: timed out"
+    },
+    {
+      "chain": "stop-market",
+      "name": "סטופ מרקט",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 11,
+      "inventoryCitiesSample": [
+        "240",
+        "250",
+        "4000",
+        "6400",
+        "7400",
+        "8300",
+        "96",
+        "9700"
+      ]
+    },
+    {
+      "chain": "wolt",
+      "name": "וולט",
+      "status": "success",
+      "availableCityBranches": 2,
+      "stores": [
+        {
+          "store": "014",
+          "subchain": "000",
+          "name": "וולט מרקט | סינמה סיטי ירושלים",
+          "city": "ירושלים",
+          "published": "2026-11-15T00:00:07+02:00",
+          "items": 5012,
+          "status": "success"
+        },
+        {
+          "store": "024",
+          "subchain": "000",
+          "name": "וולט מרקט | ירושלים תלפיות",
+          "city": "ירושלים",
+          "published": "2026-11-15T00:00:51+02:00",
+          "items": 5804,
+          "status": "success"
+        }
+      ],
+      "selectedBranches": 2,
+      "inventoryCount": 37,
+      "inventoryCitiesSample": [
+        "אור יהודה",
+        "אילון",
+        "אשדוד",
+        "באר שבע",
+        "הרצליה",
+        "חדרה",
+        "חיפה",
+        "ירושלים",
+        "כפר סבא",
+        "כפר קאסם",
+        "מודיעין-מכבים-רעות",
+        "נס ציונה"
       ]
     }
   ]
