@@ -1,14 +1,14 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-20T02:58:25.521007+00:00",
+  "generatedAt": "2026-11-20T11:18:34.831540+00:00",
   "city": "ירושלים",
   "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 3,
-  "storesDownloadedThisRun": 9,
-  "productsStored": 41235,
+  "chainsWithSuccessfulDownloads": 4,
+  "storesDownloadedThisRun": 12,
+  "productsStored": 41204,
   "shards": 1058,
-  "barcodeShards": 2765,
-  "uniqueStoresCovered": 63,
+  "barcodeShards": 2761,
+  "uniqueStoresCovered": 61,
   "uniqueChainsCovered": 11,
   "completeNationwide": false,
   "reports": [
@@ -19,39 +19,39 @@
       "availableCityBranches": 11,
       "stores": [
         {
-          "store": "706",
+          "store": "703",
           "subchain": "001",
-          "name": "ב.הפירות ארמון הנציב",
+          "name": "בית הפירות פת",
           "city": "ירושלים",
-          "published": "2026-11-20T00:10:16+02:00",
-          "items": 5371,
+          "published": "2026-11-20T12:00:17+02:00",
+          "items": 5155,
           "status": "success"
         },
         {
-          "store": "002",
+          "store": "003",
           "subchain": "001",
-          "name": "בזק מחסני מזון",
+          "name": "רמות",
           "city": "ירושלים",
-          "published": "2026-11-20T00:10:00+02:00",
-          "items": 11549,
+          "published": "2026-11-20T12:00:06+02:00",
+          "items": 7598,
           "status": "success"
         },
         {
-          "store": "048",
+          "store": "005",
           "subchain": "001",
-          "name": "עטרות",
+          "name": "רב מכר",
           "city": "ירושלים",
-          "published": "2026-11-20T00:10:18+02:00",
-          "items": 14378,
+          "published": "2026-11-20T12:00:11+02:00",
+          "items": 14850,
           "status": "success"
         },
         {
-          "store": "700",
+          "store": "001",
           "subchain": "001",
-          "name": "בית הפירות פסגת זאב",
+          "name": "תלפיות",
           "city": "ירושלים",
-          "published": "2026-11-20T00:10:04+02:00",
-          "items": 4406,
+          "published": "2026-11-20T12:15:00+02:00",
+          "items": 12985,
           "status": "success"
         }
       ],
@@ -97,23 +97,35 @@
     {
       "chain": "osher-ad",
       "name": "אושר עד",
-      "status": "failed",
+      "status": "success",
       "availableCityBranches": 3,
       "stores": [
         {
           "store": "003",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/003"
+          "subchain": "001",
+          "name": "גבעת שאול",
+          "city": "ירושלים",
+          "published": "2026-11-20T11:05:01+02:00",
+          "items": 6537,
+          "status": "success"
         },
         {
           "store": "026",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/026"
+          "subchain": "001",
+          "name": "תלפיות",
+          "city": "ירושלים",
+          "published": "2026-11-20T11:05:01+02:00",
+          "items": 6623,
+          "status": "success"
         },
         {
           "store": "028",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/028"
+          "subchain": "001",
+          "name": "שמגר",
+          "city": "ירושלים",
+          "published": "2026-11-20T11:05:01+02:00",
+          "items": 6057,
+          "status": "success"
         }
       ],
       "selectedBranches": 3,
@@ -140,39 +152,39 @@
       "availableCityBranches": 19,
       "stores": [
         {
-          "store": "009",
+          "store": "017",
           "subchain": "000",
-          "name": "גבעת מרדכי",
+          "name": "הר חוצבים",
           "city": "ירושלים",
           "published": "2026-11-20T03:02:29+02:00",
-          "items": 2776,
+          "items": 2134,
           "status": "success"
         },
         {
-          "store": "011",
+          "store": "018",
           "subchain": "000",
-          "name": "הר חומה",
+          "name": "גילה",
           "city": "ירושלים",
           "published": "2026-11-20T03:02:29+02:00",
-          "items": 2315,
+          "items": 1897,
           "status": "success"
         },
         {
-          "store": "013",
+          "store": "020",
           "subchain": "000",
-          "name": "מרכז כלל",
+          "name": "הילל",
           "city": "ירושלים",
           "published": "2026-11-20T03:02:29+02:00",
-          "items": 4533,
+          "items": 2761,
           "status": "success"
         },
         {
-          "store": "004",
+          "store": "001",
           "subchain": "000",
-          "name": "פסגת זאב",
+          "name": "רכס",
           "city": "ירושלים",
           "published": "2026-11-20T03:02:29+02:00",
-          "items": 1271,
+          "items": 1475,
           "status": "success"
         }
       ],
