@@ -1,25 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-20T20:29:23.331071+00:00",
+  "generatedAt": "2026-11-21T01:21:16.916282+00:00",
   "city": "ירושלים",
-  "adapterCount": 3,
-  "chainsWithSuccessfulDownloads": 2,
-  "storesDownloadedThisRun": 3,
-  "productsStored": 41242,
-  "shards": 1058,
-  "barcodeShards": 2767,
+  "adapterCount": 4,
+  "chainsWithSuccessfulDownloads": 3,
+  "storesDownloadedThisRun": 9,
+  "productsStored": 41264,
+  "shards": 1059,
+  "barcodeShards": 2769,
   "uniqueStoresCovered": 63,
   "uniqueChainsCovered": 11,
   "completeNationwide": false,
   "reports": [
-    {
-      "chain": "het-cohen",
-      "name": "ח. כהן",
-      "status": "failed",
-      "availableCityBranches": 0,
-      "stores": [],
-      "error": "GET https://laibcatalog.co.il/webapi/api/getfiles failed after 3 attempts: timed out"
-    },
     {
       "chain": "rami-levy",
       "name": "רמי לוי",
@@ -27,25 +19,43 @@
       "availableCityBranches": 11,
       "stores": [
         {
-          "store": "048",
+          "store": "706",
           "subchain": "001",
-          "name": "עטרות",
+          "name": "ב.הפירות ארמון הנציב",
           "city": "ירושלים",
-          "published": "2026-11-20T12:00:22+02:00",
-          "items": 14384,
+          "published": "2026-11-21T00:10:05+02:00",
+          "items": 5390,
           "status": "success"
         },
         {
-          "store": "700",
+          "store": "001",
           "subchain": "001",
-          "name": "בית הפירות פסגת זאב",
+          "name": "תלפיות",
           "city": "ירושלים",
-          "published": "2026-11-20T12:00:06+02:00",
-          "items": 4419,
+          "published": "2026-11-21T00:10:16+02:00",
+          "items": 12979,
+          "status": "success"
+        },
+        {
+          "store": "003",
+          "subchain": "001",
+          "name": "רמות",
+          "city": "ירושלים",
+          "published": "2026-11-21T00:10:08+02:00",
+          "items": 7602,
+          "status": "success"
+        },
+        {
+          "store": "005",
+          "subchain": "001",
+          "name": "רב מכר",
+          "city": "ירושלים",
+          "published": "2026-11-21T00:10:16+02:00",
+          "items": 14855,
           "status": "success"
         }
       ],
-      "selectedBranches": 2,
+      "selectedBranches": 4,
       "inventoryCount": 99,
       "inventoryCitiesSample": [
         "0",
@@ -63,41 +73,121 @@
       ]
     },
     {
-      "chain": "super-sapir",
-      "name": "סופר ספיר",
-      "status": "partial",
-      "availableCityBranches": 11,
+      "chain": "yochananof",
+      "name": "יוחננוף",
+      "status": "success",
+      "availableCityBranches": 1,
       "stores": [
         {
-          "store": "107",
-          "status": "failed",
-          "error": "No PriceFull for super-sapir/107"
-        },
-        {
-          "store": "111",
-          "subchain": "012",
-          "name": "וולט בית הנציב",
+          "store": "020",
+          "subchain": "001",
+          "name": "ירושלים תלפיות",
           "city": "ירושלים",
-          "published": "2026-11-20T03:47:33+02:00",
-          "items": 3619,
+          "published": "2026-11-21T00:40:32+02:00",
+          "items": 11894,
           "status": "success"
         }
       ],
-      "selectedBranches": 2,
-      "inventoryCount": 130,
+      "selectedBranches": 1,
+      "inventoryCount": 51,
+      "inventoryCitiesSample": [
+        "0"
+      ]
+    },
+    {
+      "chain": "osher-ad",
+      "name": "אושר עד",
+      "status": "failed",
+      "availableCityBranches": 3,
+      "stores": [
+        {
+          "store": "003",
+          "status": "failed",
+          "error": "No PriceFull for osher-ad/003"
+        },
+        {
+          "store": "026",
+          "status": "failed",
+          "error": "No PriceFull for osher-ad/026"
+        },
+        {
+          "store": "028",
+          "status": "failed",
+          "error": "No PriceFull for osher-ad/028"
+        }
+      ],
+      "selectedBranches": 3,
+      "inventoryCount": 24,
+      "inventoryCitiesSample": [
+        "155",
+        "2006",
+        "2610",
+        "2620",
+        "3000",
+        "3780",
+        "4000",
+        "5000",
+        "6100",
+        "6500",
+        "6900",
+        "70"
+      ]
+    },
+    {
+      "chain": "maayan-2000",
+      "name": "מעיין 2000",
+      "status": "success",
+      "availableCityBranches": 19,
+      "stores": [
+        {
+          "store": "043",
+          "subchain": "000",
+          "name": "השישה עשר",
+          "city": "ירושלים",
+          "published": "2026-11-21T03:02:51+02:00",
+          "items": 1878,
+          "status": "success"
+        },
+        {
+          "store": "044",
+          "subchain": "000",
+          "name": "שמעון חכם",
+          "city": "ירושלים",
+          "published": "2026-11-21T03:02:51+02:00",
+          "items": 2048,
+          "status": "success"
+        },
+        {
+          "store": "062",
+          "subchain": "000",
+          "name": "נווה יעקב (אביר יעקב)",
+          "city": "ירושלים",
+          "published": "2026-11-21T03:02:51+02:00",
+          "items": 2200,
+          "status": "success"
+        },
+        {
+          "store": "003",
+          "subchain": "000",
+          "name": "סנהדריה",
+          "city": "ירושלים",
+          "published": "2026-11-21T03:02:51+02:00",
+          "items": 4475,
+          "status": "success"
+        }
+      ],
+      "selectedBranches": 4,
+      "inventoryCount": 38,
       "inventoryCitiesSample": [
         "0",
-        "1020",
-        "1031",
-        "1113",
-        "1200",
-        "1309",
-        "1401",
-        "1731",
-        "182",
-        "229",
-        "2400",
-        "2550"
+        "3000",
+        "3616",
+        "3797",
+        "6100",
+        "6700",
+        "874",
+        "9000",
+        "922"
       ]
     }
   ]
