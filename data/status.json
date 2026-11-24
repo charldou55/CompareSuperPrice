@@ -1,206 +1,113 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T21:11:44.557520+00:00",
+  "generatedAt": "2026-11-24T02:16:59.523441+00:00",
   "city": "ירושלים",
   "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 4,
-  "storesDownloadedThisRun": 12,
-  "productsStored": 37285,
-  "shards": 996,
-  "barcodeShards": 2284,
+  "chainsWithSuccessfulDownloads": 2,
+  "storesDownloadedThisRun": 4,
+  "productsStored": 37273,
+  "shards": 994,
+  "barcodeShards": 2278,
   "uniqueStoresCovered": 60,
   "uniqueChainsCovered": 9,
   "completeNationwide": false,
   "reports": [
     {
-      "chain": "rami-levy",
-      "name": "רמי לוי",
+      "chain": "carrefour",
+      "name": "קרפור",
+      "status": "failed",
+      "availableCityBranches": 0,
+      "stores": [],
+      "error": "GET https://prices.carrefour.co.il/ failed after 3 attempts: timed out"
+    },
+    {
+      "chain": "king-store",
+      "name": "קינג סטור",
       "status": "success",
-      "availableCityBranches": 11,
+      "availableCityBranches": 2,
       "stores": [
         {
-          "store": "706",
-          "subchain": "001",
-          "name": "ב.הפירות ארמון הנציב",
+          "store": "200",
+          "subchain": "000",
+          "name": "ואדי אלגוז'",
           "city": "ירושלים",
-          "published": "2026-11-23T12:00:40+02:00",
-          "items": 5382,
+          "published": "2026-11-24T04:05:21+02:00",
+          "items": 3500,
           "status": "success"
         },
         {
-          "store": "048",
-          "subchain": "001",
-          "name": "עטרות",
+          "store": "3386",
+          "subchain": "000",
+          "name": "וולט ירושלים",
           "city": "ירושלים",
-          "published": "2026-11-23T12:00:22+02:00",
-          "items": 14358,
-          "status": "success"
-        },
-        {
-          "store": "700",
-          "subchain": "001",
-          "name": "בית הפירות פסגת זאב",
-          "city": "ירושלים",
-          "published": "2026-11-23T00:10:04+02:00",
-          "items": 4413,
-          "status": "success"
-        },
-        {
-          "store": "002",
-          "subchain": "001",
-          "name": "בזק מחסני מזון",
-          "city": "ירושלים",
-          "published": "2026-11-23T12:15:00+02:00",
-          "items": 11547,
+          "published": "2026-11-24T02:18:01+02:00",
+          "items": 1832,
           "status": "success"
         }
       ],
-      "selectedBranches": 4,
-      "inventoryCount": 99,
+      "selectedBranches": 2,
+      "inventoryCount": 48,
       "inventoryCitiesSample": [
         "0",
-        "1015",
-        "1031",
-        "1034",
+        "1061",
         "1139",
-        "1165",
-        "1200",
-        "171",
-        "195",
-        "2400",
-        "246",
-        "2500"
-      ]
-    },
-    {
-      "chain": "yochananof",
-      "name": "יוחננוף",
-      "status": "success",
-      "availableCityBranches": 1,
-      "stores": [
-        {
-          "store": "020",
-          "subchain": "001",
-          "name": "ירושלים תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-23T00:40:31+02:00",
-          "items": 11887,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 1,
-      "inventoryCount": 51,
-      "inventoryCitiesSample": [
-        "0"
-      ]
-    },
-    {
-      "chain": "osher-ad",
-      "name": "אושר עד",
-      "status": "success",
-      "availableCityBranches": 3,
-      "stores": [
-        {
-          "store": "028",
-          "subchain": "001",
-          "name": "שמגר",
-          "city": "ירושלים",
-          "published": "2026-11-23T14:05:01+02:00",
-          "items": 6070,
-          "status": "success"
-        },
-        {
-          "store": "003",
-          "subchain": "001",
-          "name": "גבעת שאול",
-          "city": "ירושלים",
-          "published": "2026-11-23T14:05:01+02:00",
-          "items": 6540,
-          "status": "success"
-        },
-        {
-          "store": "026",
-          "subchain": "001",
-          "name": "תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-23T14:05:01+02:00",
-          "items": 6614,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 3,
-      "inventoryCount": 24,
-      "inventoryCitiesSample": [
-        "155",
-        "2006",
-        "2610",
-        "2620",
+        "1161",
+        "2710",
+        "2730",
         "3000",
-        "3780",
         "4000",
-        "5000",
-        "6100",
-        "6500",
-        "6900",
-        "70"
+        "489",
+        "499",
+        "509",
+        "537"
       ]
     },
     {
-      "chain": "maayan-2000",
-      "name": "מעיין 2000",
+      "chain": "shefa-birkat-hashem",
+      "name": "שפע ברכת השם",
       "status": "success",
-      "availableCityBranches": 19,
+      "availableCityBranches": 5,
       "stores": [
         {
-          "store": "021",
+          "store": "031",
           "subchain": "000",
-          "name": "שמואל הנביא",
+          "name": "בית וגן",
           "city": "ירושלים",
-          "published": "2026-11-23T03:02:38+02:00",
-          "items": 2913,
+          "published": "2026-11-23T05:06:32+02:00",
+          "items": 2941,
           "status": "success"
         },
         {
-          "store": "022",
+          "store": "006",
           "subchain": "000",
-          "name": "בית ישראל",
+          "name": "יואל",
           "city": "ירושלים",
-          "published": "2026-11-23T03:02:38+02:00",
-          "items": 2564,
-          "status": "success"
-        },
-        {
-          "store": "023",
-          "subchain": "000",
-          "name": "קק\"ל",
-          "city": "ירושלים",
-          "published": "2026-11-23T03:02:38+02:00",
-          "items": 2004,
-          "status": "success"
-        },
-        {
-          "store": "004",
-          "subchain": "000",
-          "name": "פסגת זאב",
-          "city": "ירושלים",
-          "published": "2026-11-23T03:02:38+02:00",
-          "items": 1337,
+          "published": "2026-11-23T05:06:32+02:00",
+          "items": 2243,
           "status": "success"
         }
       ],
-      "selectedBranches": 4,
-      "inventoryCount": 38,
+      "selectedBranches": 2,
+      "inventoryCount": 22,
       "inventoryCitiesSample": [
         "0",
+        "1309",
+        "2610",
         "3000",
-        "3616",
+        "31",
+        "3730",
+        "3780",
         "3797",
-        "6100",
-        "6700",
-        "874",
-        "9000",
-        "922"
+        "6100"
       ]
+    },
+    {
+      "chain": "tiv-taam",
+      "name": "טיב טעם",
+      "status": "failed",
+      "availableCityBranches": 0,
+      "stores": [],
+      "error": "GET https://url.publishedprices.co.il/login failed after 3 attempts: [Errno -3] Temporary failure in name resolution"
     }
   ]
 }
