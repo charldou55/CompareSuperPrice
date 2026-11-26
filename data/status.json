@@ -1,14 +1,14 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-26T04:53:51.397418+00:00",
+  "generatedAt": "2026-11-26T14:57:39.339152+00:00",
   "city": "ירושלים",
   "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 3,
-  "storesDownloadedThisRun": 9,
-  "productsStored": 39572,
-  "shards": 1040,
-  "barcodeShards": 2656,
-  "uniqueStoresCovered": 59,
+  "chainsWithSuccessfulDownloads": 4,
+  "storesDownloadedThisRun": 12,
+  "productsStored": 39320,
+  "shards": 1038,
+  "barcodeShards": 2647,
+  "uniqueStoresCovered": 57,
   "uniqueChainsCovered": 10,
   "completeNationwide": false,
   "reports": [
@@ -19,39 +19,39 @@
       "availableCityBranches": 11,
       "stores": [
         {
-          "store": "706",
+          "store": "703",
           "subchain": "001",
-          "name": "ב.הפירות ארמון הנציב",
+          "name": "בית הפירות פת",
           "city": "ירושלים",
-          "published": "2026-11-26T00:10:15+02:00",
-          "items": 5423,
+          "published": "2026-11-26T12:00:06+02:00",
+          "items": 5189,
           "status": "success"
         },
         {
-          "store": "002",
+          "store": "013",
           "subchain": "001",
-          "name": "בזק מחסני מזון",
+          "name": "גבעת שאול",
           "city": "ירושלים",
-          "published": "2026-11-26T00:10:08+02:00",
-          "items": 11529,
+          "published": "2026-11-26T12:00:12+02:00",
+          "items": 12191,
           "status": "success"
         },
         {
-          "store": "003",
+          "store": "022",
           "subchain": "001",
-          "name": "רמות",
+          "name": "כנפי נשרים",
           "city": "ירושלים",
-          "published": "2026-11-26T06:00:06+02:00",
-          "items": 7605,
+          "published": "2026-11-26T12:00:08+02:00",
+          "items": 13307,
           "status": "success"
         },
         {
-          "store": "005",
+          "store": "001",
           "subchain": "001",
-          "name": "רב מכר",
+          "name": "תלפיות",
           "city": "ירושלים",
-          "published": "2026-11-26T00:10:08+02:00",
-          "items": 14816,
+          "published": "2026-11-26T12:15:00+02:00",
+          "items": 12932,
           "status": "success"
         }
       ],
@@ -97,23 +97,35 @@
     {
       "chain": "osher-ad",
       "name": "אושר עד",
-      "status": "failed",
+      "status": "success",
       "availableCityBranches": 3,
       "stores": [
         {
           "store": "003",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/003"
+          "subchain": "001",
+          "name": "גבעת שאול",
+          "city": "ירושלים",
+          "published": "2026-11-26T14:05:01+02:00",
+          "items": 6512,
+          "status": "success"
         },
         {
           "store": "026",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/026"
+          "subchain": "001",
+          "name": "תלפיות",
+          "city": "ירושלים",
+          "published": "2026-11-26T14:05:01+02:00",
+          "items": 6572,
+          "status": "success"
         },
         {
           "store": "028",
-          "status": "failed",
-          "error": "No PriceFull for osher-ad/028"
+          "subchain": "001",
+          "name": "שמגר",
+          "city": "ירושלים",
+          "published": "2026-11-26T14:05:01+02:00",
+          "items": 6047,
+          "status": "success"
         }
       ],
       "selectedBranches": 3,
@@ -140,39 +152,39 @@
       "availableCityBranches": 19,
       "stores": [
         {
-          "store": "062",
+          "store": "063",
           "subchain": "000",
-          "name": "נווה יעקב (אביר יעקב)",
+          "name": "מורדות גילה",
           "city": "ירושלים",
           "published": "2026-11-26T03:02:30+02:00",
-          "items": 1996,
+          "items": 1251,
           "status": "success"
         },
         {
-          "store": "002",
+          "store": "003",
           "subchain": "000",
-          "name": "ים סוף מאה ואחד",
+          "name": "סנהדריה",
           "city": "ירושלים",
           "published": "2026-11-26T03:02:30+02:00",
-          "items": 3318,
+          "items": 4273,
           "status": "success"
         },
         {
-          "store": "006",
+          "store": "009",
           "subchain": "000",
-          "name": "ירמיהו אחד",
+          "name": "גבעת מרדכי",
           "city": "ירושלים",
           "published": "2026-11-26T03:02:30+02:00",
-          "items": 2712,
+          "items": 2778,
           "status": "success"
         },
         {
-          "store": "007",
+          "store": "011",
           "subchain": "000",
-          "name": "משה דיין",
+          "name": "הר חומה",
           "city": "ירושלים",
           "published": "2026-11-26T03:02:30+02:00",
-          "items": 2227,
+          "items": 2278,
           "status": "success"
         }
       ],
