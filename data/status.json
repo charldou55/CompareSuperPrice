@@ -1,205 +1,61 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-27T18:05:45.116694+00:00",
+  "generatedAt": "2026-11-27T23:31:23.975443+00:00",
   "city": "ירושלים",
-  "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 4,
-  "storesDownloadedThisRun": 12,
-  "productsStored": 39010,
-  "shards": 1051,
-  "barcodeShards": 2627,
-  "uniqueStoresCovered": 55,
+  "adapterCount": 3,
+  "chainsWithSuccessfulDownloads": 0,
+  "storesDownloadedThisRun": 0,
+  "productsStored": 38741,
+  "shards": 1047,
+  "barcodeShards": 2618,
+  "uniqueStoresCovered": 54,
   "uniqueChainsCovered": 11,
   "completeNationwide": false,
   "reports": [
     {
-      "chain": "rami-levy",
-      "name": "רמי לוי",
-      "status": "success",
-      "availableCityBranches": 11,
-      "stores": [
-        {
-          "store": "013",
-          "subchain": "001",
-          "name": "גבעת שאול",
-          "city": "ירושלים",
-          "published": "2026-11-27T18:00:11+02:00",
-          "items": 12207,
-          "status": "success"
-        },
-        {
-          "store": "022",
-          "subchain": "001",
-          "name": "כנפי נשרים",
-          "city": "ירושלים",
-          "published": "2026-11-27T12:00:09+02:00",
-          "items": 13318,
-          "status": "success"
-        },
-        {
-          "store": "703",
-          "subchain": "001",
-          "name": "בית הפירות פת",
-          "city": "ירושלים",
-          "published": "2026-11-27T12:00:17+02:00",
-          "items": 5218,
-          "status": "success"
-        },
-        {
-          "store": "002",
-          "subchain": "001",
-          "name": "בזק מחסני מזון",
-          "city": "ירושלים",
-          "published": "2026-11-27T12:15:00+02:00",
-          "items": 11537,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 4,
-      "inventoryCount": 99,
+      "chain": "keshet-teamim",
+      "name": "קשת טעמים",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 28,
       "inventoryCitiesSample": [
         "0",
-        "1015",
-        "1031",
-        "1034",
-        "1139",
-        "1165",
-        "1200",
-        "171",
-        "195",
-        "2400",
-        "246",
-        "2500"
+        "5000",
+        "7400"
       ]
     },
     {
-      "chain": "yochananof",
-      "name": "יוחננוף",
-      "status": "success",
-      "availableCityBranches": 1,
-      "stores": [
-        {
-          "store": "020",
-          "subchain": "001",
-          "name": "ירושלים תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-27T00:40:56+02:00",
-          "items": 11895,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 1,
-      "inventoryCount": 51,
+      "chain": "salach-dabach",
+      "name": "סאלח דבאח",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 12,
       "inventoryCitiesSample": [
         "0"
       ]
     },
     {
-      "chain": "osher-ad",
-      "name": "אושר עד",
-      "status": "success",
-      "availableCityBranches": 3,
-      "stores": [
-        {
-          "store": "028",
-          "subchain": "001",
-          "name": "שמגר",
-          "city": "ירושלים",
-          "published": "2026-11-27T14:05:01+02:00",
-          "items": 6043,
-          "status": "success"
-        },
-        {
-          "store": "003",
-          "subchain": "001",
-          "name": "גבעת שאול",
-          "city": "ירושלים",
-          "published": "2026-11-27T14:05:01+02:00",
-          "items": 6518,
-          "status": "success"
-        },
-        {
-          "store": "026",
-          "subchain": "001",
-          "name": "תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-27T14:05:01+02:00",
-          "items": 6542,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 3,
-      "inventoryCount": 24,
+      "chain": "super-yuda",
+      "name": "סופר יודה",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 26,
       "inventoryCitiesSample": [
-        "155",
-        "2006",
-        "2610",
-        "2620",
-        "3000",
-        "3780",
-        "4000",
+        "1345",
+        "182",
+        "2650",
         "5000",
-        "6100",
-        "6500",
-        "6900",
-        "70"
-      ]
-    },
-    {
-      "chain": "maayan-2000",
-      "name": "מעיין 2000",
-      "status": "success",
-      "availableCityBranches": 19,
-      "stores": [
-        {
-          "store": "023",
-          "subchain": "000",
-          "name": "קק\"ל",
-          "city": "ירושלים",
-          "published": "2026-11-27T03:02:31+02:00",
-          "items": 1952,
-          "status": "success"
-        },
-        {
-          "store": "043",
-          "subchain": "000",
-          "name": "השישה עשר",
-          "city": "ירושלים",
-          "published": "2026-11-27T03:02:31+02:00",
-          "items": 1636,
-          "status": "success"
-        },
-        {
-          "store": "044",
-          "subchain": "000",
-          "name": "שמעון חכם",
-          "city": "ירושלים",
-          "published": "2026-11-27T03:02:31+02:00",
-          "items": 1848,
-          "status": "success"
-        },
-        {
-          "store": "002",
-          "subchain": "000",
-          "name": "ים סוף מאה ואחד",
-          "city": "ירושלים",
-          "published": "2026-11-27T03:02:31+02:00",
-          "items": 3372,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 4,
-      "inventoryCount": 38,
-      "inventoryCitiesSample": [
-        "0",
-        "3000",
-        "3616",
-        "3797",
-        "6100",
-        "6700",
-        "874",
-        "9000",
-        "922"
+        "587",
+        "6400",
+        "6600",
+        "7900",
+        "8300"
       ]
     }
   ]
