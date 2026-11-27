@@ -1,75 +1,103 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-27T08:04:21.196107+00:00",
+  "generatedAt": "2026-11-27T12:40:21.942733+00:00",
   "city": "ירושלים",
   "adapterCount": 4,
-  "chainsWithSuccessfulDownloads": 4,
-  "storesDownloadedThisRun": 12,
-  "productsStored": 39127,
-  "shards": 1053,
-  "barcodeShards": 2642,
-  "uniqueStoresCovered": 57,
+  "chainsWithSuccessfulDownloads": 2,
+  "storesDownloadedThisRun": 3,
+  "productsStored": 38997,
+  "shards": 1051,
+  "barcodeShards": 2622,
+  "uniqueStoresCovered": 55,
   "uniqueChainsCovered": 11,
   "completeNationwide": false,
   "reports": [
     {
-      "chain": "rami-levy",
-      "name": "רמי לוי",
+      "chain": "good-pharm",
+      "name": "גוד פארם",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 85,
+      "inventoryCitiesSample": [
+        "0",
+        "1020",
+        "1031",
+        "1049",
+        "1061",
+        "1139",
+        "246",
+        "2500",
+        "2530",
+        "2600",
+        "2610",
+        "2620"
+      ]
+    },
+    {
+      "chain": "osher-ad",
+      "name": "אושר עד",
       "status": "success",
-      "availableCityBranches": 11,
+      "availableCityBranches": 3,
       "stores": [
         {
           "store": "003",
           "subchain": "001",
-          "name": "רמות",
+          "name": "גבעת שאול",
           "city": "ירושלים",
-          "published": "2026-11-27T06:00:16+02:00",
-          "items": 7617,
+          "published": "2026-11-27T14:05:01+02:00",
+          "items": 6518,
           "status": "success"
         },
         {
-          "store": "005",
-          "subchain": "001",
-          "name": "רב מכר",
-          "city": "ירושלים",
-          "published": "2026-11-27T06:40:07+02:00",
-          "items": 14817,
-          "status": "success"
-        },
-        {
-          "store": "706",
-          "subchain": "001",
-          "name": "ב.הפירות ארמון הנציב",
-          "city": "ירושלים",
-          "published": "2026-11-27T00:10:19+02:00",
-          "items": 5437,
-          "status": "success"
-        },
-        {
-          "store": "001",
+          "store": "026",
           "subchain": "001",
           "name": "תלפיות",
           "city": "ירושלים",
-          "published": "2026-11-27T00:10:00+02:00",
-          "items": 12928,
+          "published": "2026-11-27T14:05:01+02:00",
+          "items": 6542,
           "status": "success"
         }
       ],
-      "selectedBranches": 4,
-      "inventoryCount": 99,
+      "selectedBranches": 2,
+      "inventoryCount": 24,
       "inventoryCitiesSample": [
-        "0",
-        "1015",
-        "1031",
-        "1034",
-        "1139",
-        "1165",
-        "1200",
-        "171",
-        "195",
-        "2400",
-        "246",
-        "2500"
+        "155",
+        "2006",
+        "2610",
+        "2620",
+        "3000",
+        "3780",
+        "4000",
+        "5000",
+        "6100",
+        "6500",
+        "6900",
+        "70"
+      ]
+    },
+    {
+      "chain": "super-cofix",
+      "name": "סופר קופיקס",
+      "status": "no_jerusalem_stores",
+      "availableCityBranches": 0,
+      "stores": [],
+      "selectedBranches": 0,
+      "inventoryCount": 34,
+      "inventoryCitiesSample": [
+        "unknown",
+        "אור יהודה",
+        "אשדוד",
+        "אשקלון",
+        "באר שבע",
+        "גבעת שמואל",
+        "גבעתיים",
+        "הוד השרון",
+        "הרצליה",
+        "חדרה",
+        "חולון",
+        "כפר סבא"
       ]
     },
     {
@@ -92,114 +120,6 @@
       "inventoryCount": 51,
       "inventoryCitiesSample": [
         "0"
-      ]
-    },
-    {
-      "chain": "osher-ad",
-      "name": "אושר עד",
-      "status": "success",
-      "availableCityBranches": 3,
-      "stores": [
-        {
-          "store": "003",
-          "subchain": "001",
-          "name": "גבעת שאול",
-          "city": "ירושלים",
-          "published": "2026-11-27T08:00:04+02:00",
-          "items": 6512,
-          "status": "success"
-        },
-        {
-          "store": "026",
-          "subchain": "001",
-          "name": "תלפיות",
-          "city": "ירושלים",
-          "published": "2026-11-27T08:00:13+02:00",
-          "items": 6537,
-          "status": "success"
-        },
-        {
-          "store": "028",
-          "subchain": "001",
-          "name": "שמגר",
-          "city": "ירושלים",
-          "published": "2026-11-27T07:00:09+02:00",
-          "items": 6037,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 3,
-      "inventoryCount": 24,
-      "inventoryCitiesSample": [
-        "155",
-        "2006",
-        "2610",
-        "2620",
-        "3000",
-        "3780",
-        "4000",
-        "5000",
-        "6100",
-        "6500",
-        "6900",
-        "70"
-      ]
-    },
-    {
-      "chain": "maayan-2000",
-      "name": "מעיין 2000",
-      "status": "success",
-      "availableCityBranches": 19,
-      "stores": [
-        {
-          "store": "020",
-          "subchain": "000",
-          "name": "הילל",
-          "city": "ירושלים",
-          "published": "2026-11-27T03:02:31+02:00",
-          "items": 2673,
-          "status": "success"
-        },
-        {
-          "store": "001",
-          "subchain": "000",
-          "name": "רכס",
-          "city": "ירושלים",
-          "published": "2026-11-27T03:02:31+02:00",
-          "items": 1544,
-          "status": "success"
-        },
-        {
-          "store": "021",
-          "subchain": "000",
-          "name": "שמואל הנביא",
-          "city": "ירושלים",
-          "published": "2026-11-27T03:02:31+02:00",
-          "items": 2902,
-          "status": "success"
-        },
-        {
-          "store": "022",
-          "subchain": "000",
-          "name": "בית ישראל",
-          "city": "ירושלים",
-          "published": "2026-11-27T03:02:31+02:00",
-          "items": 2571,
-          "status": "success"
-        }
-      ],
-      "selectedBranches": 4,
-      "inventoryCount": 38,
-      "inventoryCitiesSample": [
-        "0",
-        "3000",
-        "3616",
-        "3797",
-        "6100",
-        "6700",
-        "874",
-        "9000",
-        "922"
       ]
     }
   ]
